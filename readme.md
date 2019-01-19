@@ -30,11 +30,15 @@ php artisan migrate
 ```
 php artisan db:seed
 ```
-6. Run the project
+6. Regenerate swagger resource
+```
+php artisan l5-swagger:publish
+```
+7. Run the project
 ```
 php artisan serve
 ```
-7. Regenerate swagger resource
+7. Create user to get bearer token
 ```
-php artisan l5-swagger:publish
+http://localhost:8000/register
 ```
